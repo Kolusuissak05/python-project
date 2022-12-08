@@ -1,0 +1,28 @@
+l=eval(input("Enter Your range (x,y): "))
+cp=0
+cc=0
+def is_prime(x):
+    stats = True
+    if x <2:
+        stats = False
+    els
+        for i in range(2,x):
+            if x % i == 0:
+                stats = False
+    return stats
+for x in range(int(l[0]),int(l[1]+1)):
+    if len(l)==2:
+        if is_prime(x):
+            cp+=1
+            print(x,"is a prime number")
+        elif x==1:
+            print("1 is niether prime nor composite")
+        elif not is_prime(x):
+            cc+=1
+            print(x,"is a composite number")
+    else:
+        print("Enter Correct Range!!!")
+        break
+
+print("No. of prime numbers:",cp)
+print("No. of composite numbers:",cc)
